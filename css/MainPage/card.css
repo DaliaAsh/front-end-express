@@ -1,0 +1,56 @@
+:root {
+  --background-color:white ;   
+  --card-background-color: #77d8d8;
+  --primary-color:white; 
+  
+}
+.card {
+  background-color: var(--background-color);
+  width: 20em;
+  height: 25em;
+  opacity: 0.5;
+}
+#categories-image {  
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../assets/images/category.jpg");
+}
+#categories-description {
+    background-color : var(--card-background-color); 
+    height: 60%;
+}
+
+#products-image {
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../assets/images/product.jpg");
+}
+#products-description {
+    background-color : var(--card-background-color);
+    height: 60%;
+}
+
+#checkouts-image {
+  height: 40%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("../../assets/images/checkout.png");
+}
+#checkouts-description {
+    background-color : var(--card-background-color);
+    height: 60%;
+}
+
+.card:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.view{
+    text-align: center;
+    padding: 2em;
+    font-family: Calibri;
+    color: var(--primary-color);
+}

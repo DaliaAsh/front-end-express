@@ -1,0 +1,61 @@
+:root {
+  --options-color: #ff414d;
+  --options-primary: white;
+  --box-color: white;
+  --result-color: #f0f2f5;
+  --border-option-color: #eeeeee;
+}
+.categories-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  background-color: var(--result-color);
+}
+.options {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#result {
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--result-color);
+}
+.conetnt {
+  margin: 2em;
+  height: 60%;
+  width: 50%;
+  background-color: var(--box-color);
+  border-radius: 0.8em;
+}
+.box {
+  width: 80%;
+  height: 30em;
+}
+.option {
+  width: 80%;
+  height: 3em;
+  border-radius: 0.4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  color: var(--border-option-color);
+  font-size: x-large;
+  background-color: var(--options-color);
+  font-weight: bold;
+  font-family: Calibri;
+  margin: 1em;
+  box-shadow: 0.1em 0.1em 0.3em 0.1em #888888;
+}
+.option:hover {
+  cursor: pointer;
+}
