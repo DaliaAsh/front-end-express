@@ -5,7 +5,7 @@ interface Product{
     price: number,
     code: string,
     color:string,
-    categoryId: number,
+    category: number,
     description: string,
     stockCount:number,
     expirationDate: Date
@@ -39,7 +39,7 @@ return res.json();
     <span class='field'>Color:</span><span>${product.color}</span>
     </div>
     <div>
-    <span class='field'>Category ID:</span><span>${product.categoryId}</span>
+    <span class='field'>Category ID:</span><span>${product.category}</span>
     </div>
     <div>
     <span class='field'>Description:</span><span>${product.description}</span>
@@ -153,7 +153,7 @@ const createProduct=()=>{
     rawPrice:rawPriceInput.value,
     price:priceInput.value,
     code:codeInput.value,
-    categoryId:categoryIdInput.value,
+    category:categoryIdInput.value,
     color:colorInput.value,
     description:descriptionInput.value,
     stockCount:stockCountInput.value,
