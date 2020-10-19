@@ -7,12 +7,14 @@
 }
 .category-content {
   margin: 2em;
-  height: 5em;
-  width: 10em;
+  height: 15em;
+  width: 15em;
   background-color: var(--box-color);
   border-radius: 0.8em;
   font-weight: bold;
   font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
 }
 .trash-icon:hover{
   cursor: pointer;

@@ -20,6 +20,12 @@
     border: 0.1em solid var(--border-color);
     font-size: larger;
 }
+.input-image{
+    font-family: Calibri;
+    background-color: #ff414d;
+    color: aliceblue;
+    width: auto;
+}
 .create-button{
     width: 80%;
     height: 3em;
