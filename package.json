@@ -22,7 +22,8 @@
     "gulp": "^4.0.2",
     "gulp-gh-pages": "^0.5.4",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.9"
+    "mongoose": "^5.10.9",
+    "vanilla-tilt": "^1.7.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.8",

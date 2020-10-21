@@ -28,35 +28,27 @@ const fetchCategories = () => {
 }
 const showForm = (action: string) => {
     let htmlForm: string = "";
-    let buttonString: string = "";
-    let inputString: string = "";
-    let nameString: string = "";
-    let imageString:string = ""; 
+    let formElementsString:string=""; 
     switch (action) {
         case 'create':
-            inputString = ``;
-            nameString = ` <input class="input" placeholder="Category Name" id="category-input">`;
-            nameString = ` <input class="input" placeholder="Category Name" id="category-input">`;
-            imageString = ` <input class="input-image" type = "file" id="category-image" accept='image/*'>`
-            buttonString = `<button class="create-button" onclick='createCategory()'>Create Category</button>`;
+            formElementsString = ` <input class="input" placeholder="Category Name" id="category-input">
+            <input class="input-image" type = "file" id="category-image" accept='image/*'>
+         <button class="create-button" onclick='createCategory()'>Create Category</button>`;
             break;
         case 'get':
-            buttonString = `<button class="create-button" onclick='getCategory()'>Get Category</button>`;
+            formElementsString = `<button class="create-button" onclick='getCategory()'>Get Category</button>`;
             break;
         case 'delete':
-            buttonString = `<button class="create-button" onclick='deleteCategory()'>Delete Category</button>`;
+            formElementsString = `<button class="create-button" onclick='deleteCategory()'>Delete Category</button>`;
             break;
         case 'update':
-            inputString = `<input class="input" placeholder="Updated Name" id="category-input-updated">`;
-            buttonString = `<button class="create-button" onclick='updateCategory()'>Update Category</button>`;
+            formElementsString= `<input class="input" placeholder="Updated Name" id="category-input-updated">
+            <button class="create-button" onclick='updateCategory()'>Update Category</button>`;
             break;
     }
     htmlForm = ` <div class="content container-form" id="container">
     <input class="input" placeholder="Category ID" id="category-id">
-    ${nameString}
-    ${inputString}
-    ${imageString}
-    ${buttonString}
+     ${formElementsString}
 </div>`
     let container = document.getElementById('result');
     container.innerHTML = htmlForm;
